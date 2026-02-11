@@ -6,6 +6,8 @@ import { AppService } from './app.service';
 import { UsersModule } from './modules/users/users.module';
 import { AuthModule } from './modules/auth/auth.module';
 import { MoviesModule } from './modules/movies/movies.module';
+import { RoomsModule } from './modules/rooms/rooms.module';
+import { SessionsModule } from './modules/sessions/sessions.module';
 
 @Module({
   imports: [
@@ -26,6 +28,8 @@ import { MoviesModule } from './modules/movies/movies.module';
     UsersModule,
     AuthModule,
     MoviesModule,
+    RoomsModule,
+    SessionsModule,
   ],
   controllers: [AppController],
   providers: [AppService],
